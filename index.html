@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volo Digital Trade</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        header { background: white; color: black; padding: 20px; text-align:left; display:flex; align-items: center; justify-content: space-between; }
+        nav a { color: black; margin: 0 15px; text-decoration: none; font-size: 20px; }
+        .hero { padding: 30px; text-align: center; background: lightgray; }
+        .services { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+        .card { background: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        footer { background: #343a40; color: white; text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="volo_logo.png" alt="" width="280" height="200">
+        
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="aboutus.html">About</a>
+        <a href="contactus.html">Contact</a>
+    </nav>
+</header>
+
+
+<div class="hero"> 
+    <p style="font-size: 20px;"><b>Welcome to Volo Digital Trade</b> <br><br>
+        This is an online store dedicated to providing stylish, durable, and affordable backpacks for every lifestyle.</p>
+</div>
+
+<style>
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+    
+    .product-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product-card img {
+        max-width:"100%"; 
+        max-height:"100%";
+        object-fit: cover;
+    }
+    
+    .product-name {
+        font-size: 16px;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    
+    .product-price {
+        color: green;
+        margin-bottom: 15px;
+    }
+    </style>
+    
+    <section>
+        <h2 style="color:darkblue; font-size: 30px; text-align: center;" ><b>New Arrivals</b></h2>
+        <div class="products">
+            
+            <div class="product-card">
+                <img src="laptop.jpeg" alt="" width="220" height="210">
+                <div class="product-name"><br>Laptop Bag</div>
+                <p>Laptop Bag</p>
+                <div class="product-price">RM89</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="school.jpeg" alt="" width="140" height="210" >
+                <div class="product-name"><br>School Bag</div>
+                <p>School Bag</p>
+                <div class="product-price">RM109</div>
+            </div>
+
+            <div class="product-card">
+                <img src="sling.jpeg" alt="" width="220" height="210">
+                <div class="product-name"><br>Sling Bag</div>
+                <p>Waterproof Sling Bag</p>
+                <div class="product-price">RM79</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="duffel.jpeg" alt="" width="230" height="210">
+                <div class="product-name"><br>Duffel Bag</div>
+                <p>Lifestyle Duffel Bag</p>
+                <div class="product-price">RM189</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="travel.jpeg" alt="" width="220" height="210">
+                <div class="product-name"><br>Travel Bag</div>
+                <p>Expandable Travel Bag</p>
+                <div class="product-price">RM59</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="multipocket.jpeg" alt="" width="250" height="210">
+                <div class="product-name"><br>Multipocket Bag</div>
+                <p>Nylon Multipocket Bag</p>
+                <div class="product-price">RM29</div>
+            </div>
+    
+    
+        </div>
+    </section>
+
+    <!--benefit开头-->
+    <style>
+        .why-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .why-title {
+            font-size: 34px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .why-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .why-box {
+            flex: 1 1 300px;
+            max-width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .why-box:hover {
+            transform: translateY(-8px);
+        }
+        
+        /* 不同颜色 */
+        .box1 {
+            grid-column: 1;
+            grid-row: 1;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);;
+        }
+
+        .box2 {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 0px; /* 往下错开 */
+            background: linear-gradient(135deg, #fddb92, #d1fdff);
+        }
+
+        .box3 {
+            grid-column: 1;
+            grid-row: 3;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .why-icon {
+            font-size: 35px;
+        }
+        
+        .why-box h3 {
+            margin-top: 15px;
+            font-size: 22px;
+        }
+        
+        .why-box p {
+            margin-top: 15px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        </style>
+        
+        <section class="why-section">
+            <h2 class="why-title" style=color:darkblue>Why Choose Us?</h2>
+        
+            <div class="why-container">
+        
+                <!-- BOX 1 -->
+                <div class="why-box box1">
+                    <h3 style=color:darkblue><b>Premium Quality</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                        We provide durable and stylish bags made with high-quality materials for everyday use.
+                        <br><br>
+                        Every bag is carefully selected to ensure comfort and long-lasting performance.
+                    </p>
+                </div>
+        
+                <!-- BOX 2 -->
+                <div class="why-box box2">
+                    <h3 style=color:darkblue><b>Affordable Prices</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                        Our store offers trendy backpacks and bags at budget-friendly prices. 
+                        <br><br>
+                        You can enjoy both quality and style without overspending.
+                    </p>
+                </div>
+        
+                <!-- BOX 3 -->
+                <div class="why-box box3">
+                    <h3 style=color:darkblue><b>Wide Variety of Choices</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;" >
+                        From travel bags to laptop backpacks, we have designs suitable for students, workers, and travelers. 
+                        <br><br>
+                        Customers can easily find the perfect bag for their lifestyle.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+        <!--benefit的结尾-->
+
+        <!--Testimonial开头-->
+        <style>
+            .testimonial-section {
+                padding: 60px 20px;
+                background: #f8f9fa;
+                text-align: center;
+            }
+            
+            .testimonial-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            
+            .slider {
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+                padding: 30px;
+                color: black;
+            }
+            
+            .testimonial-box {
+                background: #b4f197;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            
+            .testimonial-text {
+                font-style: italic;
+                margin-bottom: 15px;
+            }
+            
+            .testimonial-name {
+                font-weight: bold;
+                color: black;
+            }
+            </style>
+            
+            <section class="testimonial-section">
+                <h2 class="testimonial-title" >What Our Customers Comment...</h2>
+            
+                <div class="slider">
+                    <div class="slides" id="slides">
+            
+                        <!-- Testimonial 1 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“The backpack quality is amazing and very comfortable to use every day. Delivery was also super fast!”</p>
+                                <div class="testimonial-name">— Bryan Fong</div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 2 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">"I bought a laptop bag and it looks even better in real life. Definitely worth the price!”</p>
+                                <div class="testimonial-name">— Elva Tan </div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 3 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“There are so many stylish designs to choose from and the customer service was very friendly.”</p>
+                                <div class="testimonial-name">— Tee YY</div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+            
+            <script>
+            let index = 0;
+            const slides = document.getElementById("slides");
+            const totalSlides = 3;
+            
+            setInterval(() => {
+                index++;
+                if (index >= totalSlides) {
+                    index = 0;
+                }
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }, 3500);
+            </script>
+            <!--Testimonial结尾-->
+
+
+
+<section id="contact" style="text-align:center; padding:30px;">
+    <h2>Contact Us</h2>
+    <p>Email: jenhua1202@outlook.com</p>
+    <p>Phone: 011-49708188</p>
+</section>
+
+<footer>
+    Copyright &copy; Powered by 2026 VOLO DIGITAL TRADE SDN BHD | <br>
+    202601034816 (1696911-W)
+</footer>
+
+</body>
+</html>
